@@ -71,7 +71,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo](https://richie1988.github.io/My-Portfolio/)
+- [Live Demo](https://richie1988.github.io/My_PORTFOLIO_SITE/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
