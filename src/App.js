@@ -1,25 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useContext } from 'react';
+import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-router-dom';
+
+import { ThemeContext } from './contexts/ThemeContext';
+import { Main, BlogPage, ProjectPage } from './pages'
+import { BackToTop } from './components'
+import ScrollToTop from './utils/ScrollToTop'
+
+import './App.css'
 
 function App() {
+
+  const { theme } = useContext(ThemeContext);
+
+  console.log("%cDEVELOPER PORTFOLIO", `color:${theme.primary}; font-size:50px`);
+  console.log("%chttps://github.com/hhhrrrttt222111/developer-portfolio", `color:${theme.tertiary}; font-size:20px`);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Router>
+        <ScrollToTop/>
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="/blog" element={<BlogPage />} />
+          <Route path="/projects" element={<ProjectPage />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </Router>
+      <BackToTop />
     </div>
   );
+}
+
+function NotFound() {
+  const navigate = useNavigate();
+  React.useEffect(() => {
+    navigate('/');
+  }, [navigate]);
+
+  return null;
 }
 
 export default App;
