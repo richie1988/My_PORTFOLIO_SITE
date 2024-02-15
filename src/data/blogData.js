@@ -1,6 +1,6 @@
 import one from '../assets/png/food-recipe-app.png'
 import two from '../assets/png/calculator.png'
-import three from '../assets/png/happyDj.png'
+import three from '../assets/png/bookstore.png'
 
 
 
@@ -23,11 +23,11 @@ export const blogData = [
     },
     {
         id: 3,
-        title: 'Happy Dj Music festival App explore the Gigs',
-        description: "Experience of the Third project Music festival App this is the App that brings music lovers together you will get to love and explore on this site",
-        date: 'Oct 12, 2023',
+        title: 'My Bookstore App',
+        description: "This is the Bookstore App that allows its users to read books to add books and to save there favourites books this app its easy to use and UI.",
+        date: 'July 12, 2023',
         image: three,
-        url: "https://richie1988.github.io/Happy-Dj-Music-Lovers/"
+        url: "https://richie1988.github.io/My_Bookstore_App/"
     },
     
 ]

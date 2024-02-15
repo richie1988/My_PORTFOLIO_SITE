@@ -169,85 +169,77 @@ function Contacts() {
             <div className='contacts--container'>
                 <h1 style={{ color: theme.primary }}>Contacts</h1>
                 <div className='contacts-body'>
-                    {/* <div className='contacts-form'>
-                        <form onSubmit={handleContactForm}>
-                            <div className='input-container'>
-                                <label htmlFor='Name' className={classes.label}>
-                                    Name
-                                </label>
-                                <input
-                                    placeholder='John Doe'
-                                    value={name}
-                                    onChange={(e) => setName(e.target.value)}
-                                    type='text'
-                                    name='Name'
-                                    className={`form-input ${classes.input}`}
-                                />
-                            </div>
-                            <div className='input-container'>
-                                <label
-                                    htmlFor='Email'
-                                    className={classes.label}
-                                >
-                                    Email
-                                </label>
-                                <input
-                                    placeholder='John@doe.com'
-                                    value={email}
-                                    onChange={(e) => setEmail(e.target.value)}
-                                    type='email'
-                                    name='Email'
-                                    className={`form-input ${classes.input}`}
-                                />
-                            </div>
-                            <div className='input-container'>
-                                <label
-                                    htmlFor='Message'
-                                    className={classes.label}
-                                >
-                                    Message
-                                </label>
-                                <textarea
-                                    placeholder='Type your message....'
-                                    value={message}
-                                    onChange={(e) => setMessage(e.target.value)}
-                                    type='text'
-                                    name='Message'
-                                    className={`form-message ${classes.message}`}
-                                />
-                            </div>
+                     <div className='contacts-form'>
+                        <form
+    action="https://formspree.io/f/myyrwjqa"
+    method="post"
+    onSubmit={handleContactForm}
+>
+    <div className='input-container'>
+        <label htmlFor='Name' className={classes.label}>
+            Name
+        </label>
+        <input
+            placeholder='Name'
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            type='text'
+            name='Name'
+            className={`form-input ${classes.input}`}
+        />
+    </div>
+    <div className='input-container'>
+        <label htmlFor='Email' className={classes.label}>
+            Email
+        </label>
+        <input
+            placeholder='EMAIL'
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            type='email'
+            name='_replyto' // Changed name to match Formspree's requirement
+            className={`form-input ${classes.input}`}
+        />
+    </div>
+    <div className='input-container'>
+        <label htmlFor='Message' className={classes.label}>
+            Message
+        </label>
+        <textarea
+            placeholder='Type your message....'
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+            type='text'
+            name='Message'
+            className={`form-message ${classes.message}`}
+        />
+    </div>
 
-                            <div className='submit-btn'>
-                                <button
-                                    type='submit'
-                                    className={classes.submitBtn}
-                                >
-                                    <p>{!success ? 'Send' : 'Sent'}</p>
-                                    <div className='submit-icon'>
-                                        <AiOutlineSend
-                                            className='send-icon'
-                                            style={{
-                                                animation: !success
-                                                    ? 'initial'
-                                                    : 'fly 0.8s linear both',
-                                                position: success
-                                                    ? 'absolute'
-                                                    : 'initial',
-                                            }}
-                                        />
-                                        <AiOutlineCheckCircle
-                                            className='success-icon'
-                                            style={{
-                                                display: !success
-                                                    ? 'none'
-                                                    : 'inline-flex',
-                                                opacity: !success ? '0' : '1',
-                                            }}
-                                        />
-                                    </div>
-                                </button>
-                            </div>
-                        </form>
+    <div className='submit-btn'>
+        <button type='submit' className={classes.submitBtn}>
+            <p>{!success ? 'Send' : 'Sent'}</p>
+            <div className='submit-icon'>
+                <AiOutlineSend
+                    className='send-icon'
+                    style={{
+                        animation: !success
+                            ? 'initial'
+                            : 'fly 0.8s linear both',
+                        position: success ? 'absolute' : 'initial',
+                    }}
+                />
+                <AiOutlineCheckCircle
+                    className='success-icon'
+                    style={{
+                        display: !success ? 'none' : 'inline-flex',
+                        opacity: !success ? '0' : '1',
+                    }}
+                />
+            </div>
+        </button>
+    </div>
+</form>
+
                         <Snackbar
                             anchorOrigin={{
                                 vertical: 'top',
@@ -278,7 +270,7 @@ function Contacts() {
                                 message={errMsg}
                             />
                         </Snackbar>
-                    </div> */}
+                    </div> 
 
                     <div className='contacts-details'>
                         <a
@@ -313,7 +305,7 @@ function Contacts() {
                         </div>
 
                         <div className='socialmedia-icons'>
-                            {/* {socialsData.twitter && (
+                             {socialsData.twitter && (
                                 <a
                                     href={socialsData.twitter}
                                     target='_blank'
@@ -322,7 +314,7 @@ function Contacts() {
                                 >
                                     <FaTwitter aria-label='Twitter' />
                                 </a>
-                            )} */}
+                            )} 
                             {socialsData.github && (
                                 <a
                                     href={socialsData.github}
@@ -343,7 +335,7 @@ function Contacts() {
                                     <FaLinkedinIn aria-label='LinkedIn' />
                                 </a>
                             )}
-                            {/* {socialsData.instagram && (
+                             {socialsData.instagram && (
                                 <a
                                     href={socialsData.instagram}
                                     target='_blank'
@@ -352,7 +344,7 @@ function Contacts() {
                                 >
                                     <FaInstagram aria-label='Instagram' />
                                 </a>
-                            )}*/}
+                            )}
                             {socialsData.medium && (
                                 <a
                                     href={socialsData.medium}
@@ -363,7 +355,7 @@ function Contacts() {
                                     <FaMediumM aria-label='Medium' />
                                 </a>
                             )}
-                            {/*
+                           
                             {socialsData.blogger && (
                                 <a
                                     href={socialsData.blogger}
@@ -423,7 +415,7 @@ function Contacts() {
                                 >
                                     <FaGitlab aria-label='GitLab' />
                                 </a>
-                            )} */}
+                            )} 
                         </div>
                     </div>
                 </div>

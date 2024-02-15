@@ -1,4 +1,4 @@
-import one from '../assets/png/Riya-Movies.png'
+import one from '../assets/png/happyDj.png'
 import two from '../assets/png/Space-X-projects.jpeg'
 import three from '../assets/png/book-developer.png'
 import four from '../assets/png/Budget-App.png'
@@ -11,30 +11,30 @@ import eight from '../assets/png/calculator.png'
 export const projectsData = [
     {
         id: 1,
-        projectName: 'Riya Movie Channel Site',
+        projectName: 'Happy Dj Music App',
         projectDesc: "Explore a curated collection of movies on Riya's Movie Channel Site, offering a diverse range of genres and titles for every cinephile's taste.",
         tags: ['HTML' ,'CSS', 'Javascript'],
-        code: 'https://github.com/richie1988/RiyaMovies',
-        demo: 'https://github.com/richie1988/RiyaMovies',
+        code: 'https://github.com/richie1988/Happy-Dj-Music-Lovers',
+        demo: 'https://richie1988.github.io/Happy-Dj-Music-Lovers/',
         image: one
     },
     {
         id: 2,
         projectName: 'Space-X the SpaceShip',
-        projectDesc: "Embark on an interstellar journey with the Space-X SpaceShip App, your portal to the latest news, updates, and missions from Elon Musk's groundbreaking aerospace company.",
+        projectDesc: "This the festival website it makes music lovers to follow there festivall and whats happening around the world Its Mobile vision app and can be accessed on the Mobile devices and Desktop",
         tags: ['HTML', 'CSS','React Redux','Bootstrap', 'Javascript'],
         code: 'https://github.com/richie1988/SpaceTravelers-Hub',
         demo: 'https://richie1988.github.io/SpaceTravelers-Hub/',
         image: two
     },
-    {
-        id: 3,
-        projectName: 'Make An appointment with Developer',
-        projectDesc: "Seamlessly connect with skilled developers for your projects through the Book a Developer App, streamlining the process of finding the perfect coding talent for your software endeavors.",
-        tags: ['CSS', 'HTML', 'PostgresSQL', "Javascript","Ruby", "Bootstrap"],
-        code: 'https://github.com/richie1988/Web_developer_booking_App',
-        demo: 'https://github.com/richie1988/Web_developer_booking_App',
-        image: three
+     {
+        id: 5,
+        projectName: 'Leaderboard Record Sports Scores',
+        projectDesc: "Stay ahead in the game with the Leaderboard Record Sports Scores App, your go-to platform for tracking and analyzing sports scores and player statistics in real-time.",
+        tags: ['HTML', 'CSS', 'Javascript'],
+        code: 'https://github.com/richie1988/Leader-Board',
+        demo: 'https://richard-leaderboard-3833aa.netlify.app/',
+        image: five
     },
     {
         id: 4,
@@ -45,14 +45,14 @@ export const projectsData = [
         demo: 'https://budget-app-8p6a.onrender.com/',
         image: four
     },
-    {
-        id: 5,
-        projectName: 'Leaderboard Record Sports Scores',
-        projectDesc: "Stay ahead in the game with the Leaderboard Record Sports Scores App, your go-to platform for tracking and analyzing sports scores and player statistics in real-time.",
-        tags: ['HTML', 'CSS', 'Javascript'],
-        code: 'https://github.com/richie1988/Leader-Board',
-        demo: 'https://richard-leaderboard-3833aa.netlify.app/',
-        image: five
+     {
+        id: 3,
+        projectName: 'Super Mario info',
+        projectDesc: "SuperMario is your ultimate companion for all things Mario. Stay connected to the information and games like never before with our comprehensive app",
+        tags: ['CSS', 'HTML', 'React', "Javascript","Redux", "scss"],
+        code: 'https://github.com/richie1988/SuperMario',
+        demo: 'https://richardmarioinfo.onrender.com/',
+        image: six
     },
     
 ]

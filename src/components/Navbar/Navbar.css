@@ -1,3 +1,4 @@
+
 .navbar {
     height: 6.5rem;
     position: absolute;
@@ -16,9 +17,8 @@
     width: 100%;
     padding: 0 3rem;
     margin-top: 1rem;
-    /* position: fixed; */
-    /* top: 10px; */
-    
+/*    position: fixed;*/
+/*    top: 10px; */
 }
 
 
@@ -51,6 +51,9 @@
         font-size: 2.2rem;
         margin-top: -1.5rem;
     }
+    #navicon {
+        visibility: visible;
+    }
 }
 
 @media (max-width:800px) {
@@ -76,7 +79,7 @@
 }
 
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 
+@media only screen and (min-device-width: 320px) and (min-device-width: 375px) and (max-device-width: 
   480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
     .navbar {
         height: 5rem;
@@ -88,4 +91,88 @@
     .navbar--container > h1 {
         font-size: 1.5rem;
     }
+    #navicon {
+        visibility: visible;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .link-Item-container, .links-bar ul li{
+        display: none;
+    }
+}
+
+/*.link-Item-container, .links-bar ul li {
+        display: none;
+    }*/
+
+@media only screen and (min-width: 768px) {
+    #navicon {
+        visibility: hidden;
+    }
+.links-bar{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    border: none;
+    margin-bottom: 15px;
+
+}
+.links-bar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: auto;
+    border: none;
+    float: right;
+    border-radius: 30px;
+    padding: 5px 0;
+}
+.links-bar ul li {
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+    font-size: 24px;
+    font-weight: 600;
+    padding-right: 20px;
+    margin-left: auto;
+}
+.link-Item-container {
+    height: auto;
+    border-Radius: 30px;
+    display: flex;
+    align-Items: center;
+    justify-Content: space-evenly;
+    padding: 0 30px;
+    boxSizing: border-box;
+    border: 2px solid;
+    padding-left: 10px;
+    border: 3px solid #f56539;
+    background-color: #f56539;
+    transition: background-color 0.4s, color 0.3s;
+
+}
+.item-drawer {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 50%;
+    fontSize: 1.3rem;
+    padding: 6px;
+    text-align: center;
+    margin-right: 10px;
+    color: black;
+
+}
+.item-drawer:hover {
+    color: whitesmoke;
+
+}
+.link-Item-container:hover {
+    background-color: black;
+}
 }

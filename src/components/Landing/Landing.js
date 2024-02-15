@@ -176,7 +176,7 @@ function Landing() {
                                     </Button>
                                 </a>
                             )}
-                            <NavLink
+                            {/*<NavLink
                                 to='/#contacts'
                                 smooth={true}
                                 spy='true'
@@ -185,7 +185,7 @@ function Landing() {
                                 <Button className={classes.contactBtn}>
                                     Contact
                                 </Button>
-                            </NavLink>
+                            </NavLink>*/}
                         </div>
                     </div>
                 </div>

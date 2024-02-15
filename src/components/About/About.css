@@ -66,6 +66,18 @@
 .about-img > img {
     width: 380px;
     flex: 0.5;
+    animation: bounceAndChangeColor 4s infinite;
+}
+
+@keyframes bounceAndChangeColor {
+  0%, 100% {
+    color: white;
+    transform: translateY(0);
+  }
+  50% {
+    color: #f56539;
+    transform: translateY(-20px);
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1380px) {

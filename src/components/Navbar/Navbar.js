@@ -135,6 +135,66 @@ function Navbar() {
 
     return (
         <div className='navbar'>
+        <div className="links-bar">
+        <ul>
+        <li><Fade left>
+                <NavLink
+                    to='/#about'
+                    smooth={true}
+                    spy='true'
+                    duration={2000}
+                >
+                    <div className="link-Item-container">
+                        <span className="item-drawer">
+                            About
+                        </span>
+                    </div>
+                </NavLink>
+        </Fade></li>
+        <li> <Fade left>
+            <NavLink
+                to='/#skills'
+                smooth={true}
+                spy='true'
+                duration={2000}
+            >
+                <div className="link-Item-container">
+                    <span className="item-drawer">
+                        Skills
+                    </span>
+                </div>
+            </NavLink>
+        </Fade></li>
+        <li><Fade left>
+            <NavLink
+                to='/#projects'
+                smooth={true}
+                spy='true'
+                duration={2000}
+            >
+                <div className="link-Item-container">
+                    <span className="item-drawer">
+                        Projects
+                    </span>
+                </div>
+            </NavLink>
+        </Fade></li>
+        <li><Fade left>
+            <NavLink
+                to='/#contacts'
+                smooth={true}
+                spy='true'
+                duration={2000}
+            >
+                <div className="link-Item-container">
+                    <span className="item-drawer">
+                        Contact
+                    </span>
+                </div>
+            </NavLink>
+        </Fade></li>
+        </ul>
+        </div>
             <div  className='navbar--container'>
                 <h1 style={{ color: theme.secondary }}>
                     {shortname(headerData.name)}

@@ -77,12 +77,33 @@
 }
 
 .lcr--content h1 {
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 3.25rem;
+  line-height: 110%;
+  margin: 1rem 0;
+  position: relative;
+  animation: bounceAndChangeColor 4s infinite;
+}
+
+@keyframes bounceAndChangeColor {
+  0%, 100% {
+    color: white;
+    transform: translateY(0);
+  }
+  50% {
+    color: #f56539;
+    transform: translateY(-20px);
+  }
+}
+
+/*.lcr--content h1 {
   font-weight: 600;
   font-size: 3.25rem;
   line-height: 110%;
   margin: 1rem 0;
 }
-
+*/
 .lcr--content p {
   margin-top: 1.45rem;
   font-weight: 500;
