@@ -31,7 +31,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Meals Project <a name="about-project"></a>
+# 📖 PORTFOLIO SPACE <a name="about-project"></a>
 
 **My-Space:** A web application for a personal website that provides and showcases the work i do and the work im working on the upcomming projects. on this site you will be able to find all the projects i have worked on and the upcomming projects i will be working on. you be able to leave a comment so i can be able to communitcate with you or be able to the comment made by the page visitors.
 
