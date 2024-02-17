@@ -39,7 +39,7 @@ function AchievementCard({id, title, details, date, field, image}) {
                     </div>
                 </div> 
                 <div className="achievecard-imgcontainer">
-                    <img src={image} alt="" />
+                    <img src={image} alt="achievement" />
                 </div>
            </div>
         </Fade>

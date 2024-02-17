@@ -17,9 +17,8 @@ function Footer() {
 
     return (
         <div className="footer" style={{backgroundColor: theme.secondary}}>
-            <p style={{color: theme.tertiary}}>
-                The Portfolio  
-                <span style={{color: theme.primary, margin: '0 0.5rem -1rem 0.5rem'}}>
+            <p style={{color: theme.tertiary}}> 
+                <span style={{color: theme.primary, margin: '0 0.5rem -1rem 0.5rem', fontSize:'14px'}}>
                     &copy; {new Date().getFullYear()} Richard Sikaonga. All rights reserved.
                     Developed by {shortname(headerData.name)}
                 </span>

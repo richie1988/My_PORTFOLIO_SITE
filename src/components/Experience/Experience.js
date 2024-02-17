@@ -14,7 +14,7 @@ function Experience() {
         <div className="experience" id="experience" style={{backgroundColor: theme.secondary}}> 
              <div className="experience-body">
                  <div className="experience-image">
-                     <img src={theme.expimg} alt="" />
+                     <img src={theme.expimg} alt="experience" />
                  </div>
                  <div className="experience-description">
                     <h1 style={{color:theme.primary}}>Experience</h1>
