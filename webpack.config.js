@@ -2,9 +2,9 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: './src/index.js', // Update entry point as per your project structure
+  entry: './src/index.js',
   output: {
-    path: path.resolve(__dirname, 'dist'), // Update output path as per your project structure
+    path: path.resolve(__dirname, 'build'), // Update output path
     filename: 'bundle.js',
   },
   module: {
@@ -22,25 +22,7 @@ module.exports = {
           {
             loader: 'image-webpack-loader',
             options: {
-              mozjpeg: {
-                progressive: true,
-                quality: 65,
-              },
-              // optipng.enabled: false will disable optipng
-              optipng: {
-                enabled: false,
-              },
-              pngquant: {
-                quality: [0.65, 0.90],
-                speed: 4,
-              },
-              gifsicle: {
-                interlaced: false,
-              },
-              // the webp option will enable WEBP
-              webp: {
-                quality: 75,
-              },
+              // Your image optimization options
             },
           },
         ],
@@ -58,8 +40,11 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './public/index.html', // Specify the path to your index.html file
-      filename: 'index.html', // Output filename (default is index.html)
+      template: './public/index.html',
     }),
   ],
+  devServer: {
+    // This option configures the dev server to serve the files from the 'build' directory
+    contentBase: path.join(__dirname, 'build'),
+  },
 };
