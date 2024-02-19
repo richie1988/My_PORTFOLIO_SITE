@@ -97,13 +97,13 @@
   }
 }
 
-/*.lcr--content h1 {
+.lcr--content h1 {
   font-weight: 600;
   font-size: 3.25rem;
   line-height: 110%;
   margin: 1rem 0;
 }
-*/
+
 .lcr--content p {
   margin-top: 1.45rem;
   font-weight: 500;
