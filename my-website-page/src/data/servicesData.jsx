@@ -1,32 +1,32 @@
 /* eslint-disable */
-import { BiShoppingBag, BiPencil } from "react-icons/bi";
-import { BsCodeSlash, BsClipboardData } from "react-icons/bs";
+import { BiNetworkChart } from "react-icons/bi";
+import { BsCodeSlash, BsClipboardData} from "react-icons/bs";
 import { AiOutlineMail, AiFillAudio } from "react-icons/ai";
-import { FaInternetExplorer,  FaChalkboardTeacher, FaCameraRetro, FaPinterest, FaVideo, FaTabletAlt, FaRegNewspaper } from "react-icons/fa";
-
+import { FiSettings } from "react-icons/fi";
+import { FaCode, FaClipboardCheck, FaBug, FaLaptopCode, FaProjectDiagram, FaPaintBrush, FaInternetExplorer } from "react-icons/fa";
  
 
 export const servicesData = [
-    // {
-    //     id: 1,
-    //     title: 'Marketing',
-    //     icon: <BiShoppingBag/>
-    // },
+    {
+        id: 1,
+        title: 'software development',
+        icon: <FaCode />
+    },
     {
         id: 2,
-        title: 'Content Writing',
-        icon: <BiPencil /> 
+        title: 'quality assurance',
+        icon: <FaClipboardCheck />
     },
     {
         id: 3,
-        title: 'Email Marketing',
-        icon: <AiOutlineMail />
+        title: 'software settings',
+        icon: <FiSettings/>
     },
-    // {
-    //     id: 4,
-    //     title: 'Internet Research',
-    //     icon: <FaInternetExplorer />
-    // },
+    {
+        id: 4,
+        title: 'Internet Research',
+        icon: <FaInternetExplorer />
+    },
     // {
     //     id: 5,
     //     title: 'Tutoring',
@@ -40,8 +40,8 @@ export const servicesData = [
     },
     {
         id: 7,
-        title: 'Photography',
-        icon: <FaCameraRetro />
+        title: 'application development',
+        icon: <FaLaptopCode />
     },
     // {
     //     id: 8,
@@ -50,18 +50,19 @@ export const servicesData = [
     // }, 
     {
         id: 9,
-        title: 'Video Editing',
-        icon: <FaVideo />
+        title: 'codebase implementation',
+        icon: <FaProjectDiagram />
     },
-    // {
-    //     id: 10,
-    //     title: 'Data Entry', 
-    //     icon: <BsClipboardData />
-    // },
+    {
+        id: 10,
+        title: 'Data Entry', 
+        icon: <BsClipboardData />
+    },
     {
         id: 11,
-        title: 'Ebook Writing',
-        icon: <FaTabletAlt />
+        title: 'design',
+        icon: <FaPaintBrush />
+
     },
     // {
     //     id: 12,
@@ -70,8 +71,8 @@ export const servicesData = [
     // },
     {
         id: 13,
-        title: 'Blog Posting',
-        icon: <FaRegNewspaper />
+        title: 'mail',
+        icon:  <AiOutlineMail /> 
     },
 
 ]

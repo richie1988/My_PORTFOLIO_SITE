@@ -19,6 +19,8 @@ function Main() {
             <Projects />
             <Achievement />
              <Blog /> 
+             <Services />
+            <Testimonials />
             <Contacts />
             <Footer />
         </div>

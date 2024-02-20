@@ -136,6 +136,7 @@
 }
 .review--img img{
     width: 90px;
+    border-radius: 50%;
 }
 
 .review--content{

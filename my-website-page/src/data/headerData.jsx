@@ -1,4 +1,4 @@
-import resume from '../assets/pdf/my-resumethree.pdf'
+import resume from '../assets/pdf/ResumeFull.pdf'
 
 export const headerData = {
     name: 'RICHARD SIKAONGA',
